@@ -1,0 +1,60 @@
+.weather {
+  place-self: center;
+  padding: 15px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #6c3d8e, #8a5dbf);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  max-width: 200px;
+  width: 100%;
+  transition: transform 0.3s;
+}
+
+.weather:hover {
+  transform: translateY(-4px);
+}
+
+.weather-icon {
+  width: 60px;
+  margin: 10px 0;
+}
+
+.temperature {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 5px 0;
+}
+
+.location {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 5px 0 15px 0;
+}
+
+.weather-data {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+  gap: 6px;
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.9rem;
+}
+
+.col img {
+  width: 18px;
+}
+
+.col div span {
+  font-size: 0.65rem;
+  opacity: 0.7;
+}

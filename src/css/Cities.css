@@ -1,0 +1,162 @@
+/* General Styles */
+a {
+  text-decoration: none;
+}
+a:link,
+a:visited {
+  color: black;
+}
+
+/* Title Section */
+.title {
+  margin: 40px 0 30px;
+  text-align: left;
+  padding-left: 20px;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.title h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #222;
+  margin: 0;
+}
+
+/* Upper Image Section */
+.upper-image {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.upper-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.upper-image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Maps Container */
+.maps-container {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 30px;
+  padding: 0 20px;
+  max-width: 1400px;
+  margin: 0 auto 60px;
+}
+
+/* Sidebar with Cities */
+.cities-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Map Styling */
+.map-cities {
+  height: 100%;
+  min-height: 600px;
+  max-height: 874px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* All Destinations Grid */
+.Allcities {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 0 20px;
+  max-width: 1400px;
+  margin: 0 auto 60px;
+}
+
+/* City Card Styling */
+.city-card {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  height: 100%;
+}
+.city-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.city-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.city-card-content {
+  background-color: white;
+  position: relative;
+}
+.city-card-content h3 {
+  margin: 0 0 8px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #222;
+}
+.city-card-content p {
+  color: #666;
+  font-size: 1rem;
+  margin: 0;
+  font-size: 20px;
+  left: 85px;
+}
+
+.city-card p {
+  padding-left: 20px !important;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .Allcities {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .maps-container {
+    grid-template-columns: 1fr;
+  }
+
+  .map-cities {
+    height: 400px;
+    min-height: auto;
+    order: 2;
+  }
+
+  .cities-sidebar {
+    order: 1;
+  }
+
+  .upper-image-title {
+    font-size: 2.5rem;
+  }
+
+  .title h1 {
+    font-size: 2rem;
+  }
+
+  .Allcities {
+    grid-template-columns: 1fr;
+  }
+}
