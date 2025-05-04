@@ -25,6 +25,7 @@ function CityPage() {
         image={`/images/${city.name}/${place.img}`} //path of image
         title={place.name} //title of image
         subtitle={place.alt} //alt
+        className="home-city-card"
       />
     );
   }
@@ -38,6 +39,7 @@ function CityPage() {
         image={`/images/${city.name}/${event.img}`} //path of image
         title={event.name} //title of image
         subtitle={event.alt} //alt
+        className="home-city-card"
       />
     );
   }
@@ -72,9 +74,9 @@ function CityPage() {
 
       <section>
         <h2>Transportation Options</h2>
-        <p>Private car</p>
-        <p>Public Transportation</p>
-        <p>Ride Hailing</p>
+        <p className="transpotation">Private car</p>
+        <p className="transpotation">Public Transportation</p>
+        <p className="transpotation">Ride Hailing</p>
       </section>
     </main>
   );

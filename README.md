@@ -19,15 +19,16 @@ This project was created using CodeSandBox, so you can the open link below and r
 - Smooth page navigation using React Router
 - Organized component structure
 - Static JSON used for data simulation
+- Dynamic weather component using AJAX to fetch real time data from an API
 - Deployed live using CodeSandbox and in the github
 
 ## 📸 Screenshots
 HomePage:
 
-![city page1](images/Screenshots/cityPage1.png)  
-![city page2](images/Screenshots/cityPage2.png)  
-![city page3](images/Screenshots/cityPage3.png)  
-![city page4](images/Screenshots/cityPage4.png)
+![Hompepage1](/nodebox/public/Screenshots/Homepage1.png)  
+![Hompepage2](/nodebox/public/Screenshots/Homepage2.png)  
+![Hompepage3](/nodebox/public/Screenshots/Homepage3.png)  
+![Hompepage4](/nodebox/public/Screenshots/Homepage4.png)
 
 
 City Page:
@@ -37,9 +38,26 @@ City Page:
 ![city page3](images/Screenshots/cityPage3.png)  
 ![city page4](images/Screenshots/cityPage4.png)
 
+FAQ page:
+
+![FAQ page1](images/Screenshots/FAQ1__.png)  
+![FAQ page2](images/Screenshots/FAQ2_.png)  
+
+
+All Cities Page:
+
+![Cities page1](images/Screenshots/CitiesPage1.png)  
+![Cities page2](images/Screenshots/CitiesPage2.png)  
+![Cities page3](images/Screenshots/CitiesPage3.png)  
+
 
 ## 👩🏻‍💻 Team 
 
 - Bayan Alharbi :
- Footer component, all the realted code in the home page
-- هنا حطوا اسماءكم 
+ Footer component, all the related code in the home page
+- Leena Alnahdi:
+City page code and all of cities data, city card components
+- Wejdan Alsulami :
+Navbar component ,all the related code in the FAQ page.
+- Shahad Balbaid:
+Weather component, all the related code in the all cites page.

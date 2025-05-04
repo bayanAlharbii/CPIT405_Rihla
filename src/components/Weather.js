@@ -1,12 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../css/Weather.css";
-import clear_icon from "../images/clear.png";
-import cloud_icon from "../images/cloud.png";
-import drizzle_icon from "../images/drizzle.png";
-import humidity_icon from "../images/humidity.png";
-import rain_icon from "../images/rain.png";
-import snow_icon from "../images/snow.png";
-import wind_icon from "../images/wind.png";
+import "../styles.css";
 
 const API_KEY = "988188c3967f08d815b19689d1a26dfd";
 
@@ -14,20 +8,20 @@ function Weather(props) {
   const [weatherData, setWeatherData] = useState(false);
 
   const allIcons = {
-    "01d": clear_icon,
-    "01n": clear_icon,
-    "02d": cloud_icon,
-    "02n": cloud_icon,
-    "03d": cloud_icon,
-    "03n": cloud_icon,
-    "04d": drizzle_icon,
-    "04n": drizzle_icon,
-    "09d": rain_icon,
-    "09n": rain_icon,
-    "10n": rain_icon,
-    "10d": rain_icon,
-    "13d": snow_icon,
-    "13n": snow_icon,
+    "01d": "/images/weatherImg/clear.png",
+    "01n": "/images/weatherImg/clear.png",
+    "02d": "/images/weatherImg/cloud.png",
+    "02n": "/images/weatherImg/cloud.png",
+    "03d": "/images/weatherImg/cloud.png",
+    "03n": "/images/weatherImg/cloud.png",
+    "04d": "/images/weatherImg/drizzle.png",
+    "04n": "/images/weatherImg/drizzle.png",
+    "09d": "/images/weatherImg/rain.png",
+    "09n": "/images/weatherImg/rain.png",
+    "10n": "/images/weatherImg/rain.png",
+    "10d": "/images/weatherImg/rain.png",
+    "13d": "/images/weatherImg/snow.png",
+    "13n": "/images/weatherImg/snow.png",
   };
 
   const cityWeather = async (city) => {
@@ -60,14 +54,14 @@ function Weather(props) {
       <p className="location">{weatherData.location}</p>
       <div className="weather-data">
         <div className="col">
-          <img src={humidity_icon} alt="" />
+          <img src={"/images/weatherImg/humidity.png"} alt="weather icon" />
           <div>
             <p>{weatherData.humidity} %</p>
             <span>Humidity</span>
           </div>
         </div>
         <div className="col">
-          <img src={wind_icon} alt="" />
+          <img src={"/images/weatherImg/wind.png"} alt="weather icon" />
           <div>
             <p>{weatherData.windSpeed} Km/h</p>
             <span>Wind Speed</span>

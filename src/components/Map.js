@@ -1,12 +1,12 @@
-// import "./styles.css";
 import "leaflet/dist/leaflet.css";
+import "../styles.css";
 
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import { Icon } from "leaflet";
 import MarkerClusterGroup from "react-leaflet-cluster";
 import { useNavigate } from "react-router-dom";
 
-export default function Map() {
+function Map() {
   const navigate = useNavigate();
 
   const markers = [
@@ -38,9 +38,8 @@ export default function Map() {
   ];
 
   const customIcon = new Icon({
-    // iconUrl: "https://cdn-icons-png.flaticon.com/128/2776/2776067.png",
-    iconUrl: require("../images/location-pin.png"),
-    iconSize: [38, 38], // reduced to a reasonable size
+    iconUrl: "/images/map/location-pin.png",
+    iconSize: [38, 38],
   });
 
   return (
@@ -64,11 +63,11 @@ export default function Map() {
                 navigate(marker.url);
               },
             }}
-          >
-            <Popup>{marker.popUp}</Popup>
-          </Marker>
+          ></Marker>
         ))}
-      </MarkerClusterGroup>{" "}
+      </MarkerClusterGroup>
     </MapContainer>
   );
 }
+
+export default Map;
